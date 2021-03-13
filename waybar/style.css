@@ -1,0 +1,118 @@
+@import "nord.css";
+
+window {
+    background-color: transparent;
+}
+
+* {
+    font-family: Cantarell;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/*
+* Left part
+*/
+#mode {
+    color: @nord0;
+    background-color: @nord13;
+    margin-left: 8px;
+    border-radius: 5px;
+    padding: 0px 6px;
+}
+
+#workspaces button {
+    margin-left: 8px;
+    background-color: @nord3;
+    padding: 0px 4px;
+    color: @nord6;
+    margin-top: 0;
+}
+
+#workspaces button.focused {
+    color: @nord0;
+    background-color: @nord8;
+}
+
+#window {
+    margin-left: 10px;
+    color: @nord6;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+/*
+* Right part
+*/
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#backlight,
+#language,
+#battery,
+#clock,
+#tray {
+    background-color: @nord2;
+    padding: 0px 8px;
+    color: @nord6;
+}
+
+#backlight,
+#language,
+#battery,
+#clock,
+#tray {
+    margin-right: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#pulseaudio,
+#network,
+#clock,
+#tray {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#pulseaudio.muted {
+    background-color: @nord13;
+    color: @nord3;
+}
+
+#pulseaudio, #backlight {
+    background-color: @nord10;
+}
+
+#network, #cpu, #memory, #battery {
+    background-color: @nord3;
+}
+
+#tray {
+    background-color: @nord1;
+}
+
+#network.disabled, 
+#network.disconnected {
+    background-color: @nord13;
+    color: @nord0; 
+}
+
+#battery.warning {
+    background-color: @nord13;
+    color: @nord0; 
+}
+
+#battery.critical {
+    background-color: @nord11;
+    color: @nord0; 
+}
+
+#tray menu {
+    background-color: @nord2;
+    color: @nord4;
+    padding: 10px 5px;
+    border: 2px solid @nord1;
+}
